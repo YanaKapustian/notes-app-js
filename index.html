@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+   <title>Notes app</title>
+</head>
+<body>
+   <div class="content">
+      <div class="sidebar">
+         <div class="sidebar__title">Notes App</div>
+         <nav>
+            <p class="sidebar__category chosen">All notes</p>
+            <ul class="sidebar__list">
+               <li class="sidebar__item">Task</li>
+               <li class="sidebar__item">Random thought</li>
+               <li class="sidebar__item">Idea</li>
+            </ul>
+            <p class="sidebar__category">Archived notes</p>
+         </nav>
+      </div>
+      <div class="notes">
+         <div class="container">
+            <div class="notes__block">
+               <button class="btn__add-note">+ Add new note</button>
+               <div class="note" id="1">
+                  <div class="note__header">
+                     <span class="note__title">Shopping list</span>
+                     <div class="note__info">
+                        <span class="note__category">Task</span>
+                        <span class="note__date">11.09.2022</span>
+                     </div>
+                  </div>
+                  <div class="note__main">
+                     <p class="note__content">Bread, eggs, tomatoes, carrots, milk</p>
+                     <span class="note__dates"></span>
+                  </div>
+                  <div class="note__actions">
+                     <div class="note__icon" id="1_edit"><img src="img/pencil.png" alt="edit"></div>
+                     <div class="note__icon" id="1_archive"><img src="img/download-button.png" alt="archive"></div>
+                     <div class="note__icon" id="1_delete"><img src="img/garbage.png" alt="delete"></div>
+                  </div>
+               </div>
+
+               <div class="note" id="2">
+                  <div class="note__header">
+                     <span class="note__title">B-day</span>
+                     <div class="note__info">
+                        <span class="note__category">Task</span>
+                        <span class="note__date">10.09.2022</span>
+                     </div>
+                  </div>
+                  <div class="note__main">
+                     <p class="note__content">Don't forget to congratulate Mark on his birthday 23.09</p>
+                     <span class="note__dates">23.09</span>
+                  </div>
+                  <div class="note__actions">
+                     <div class="note__icon" id="2_edit"><img src="img/pencil.png" alt="edit"></div>
+                     <div class="note__icon" id="2_archive"><img src="img/download-button.png" alt="archive"></div>
+                     <div class="note__icon" id="2_delete"><img src="img/garbage.png" alt="delete"></div>
+                  </div>
+               </div>
+
+               <div class="note" id="3">
+                  <div class="note__header">
+                     <span class="note__title">Reading list</span>
+                     <div class="note__info">
+                        <span class="note__category">Idea</span>
+                        <span class="note__date">11.09.2022</span>
+                     </div>
+                  </div>
+                  <div class="note__main">
+                     <p class="note__content">Pride and Prejudice <br>
+To All the Boys I've Loved Before</p>
+                     <span class="note__dates"></span>
+                  </div>
+                  <div class="note__actions">
+                     <div class="note__icon" id="3_edit"><img src="img/pencil.png" alt="edit"></div>
+                     <div class="note__icon" id="3_archive"><img src="img/download-button.png" alt="archive"></div>
+                     <div class="note__icon" id="3_delete"><img src="img/garbage.png" alt="delete"></div>
+                  </div>
+               </div>
+
+               <div class="note" id="4">
+                  <div class="note__header">
+                     <span class="note__title">Driver's license</span>
+                     <div class="note__info">
+                        <span class="note__category">Random thought</span>
+                        <span class="note__date">11.09.2022</span>
+                     </div>
+                  </div>
+                  <div class="note__main">
+                     <p class="note__content">I got my driver's license last week 04/09/22, just like we always talked about...</p>
+                     <span class="note__dates">04/09/22</span>
+                  </div>
+                  <div class="note__actions">
+                     <div class="note__icon" id="4_edit"><img src="img/pencil.png" alt="edit"></div>
+                     <div class="note__icon" id="4_archive"><img src="img/download-button.png" alt="archive"></div>
+                     <div class="note__icon" id="4_delete"><img src="img/garbage.png" alt="delete"></div>
+                  </div>
+               </div>
+
+               <div class="note" id="5">
+                  <div class="note__header">
+                     <span class="note__title">New movie</span>
+                     <div class="note__info">
+                        <span class="note__category">Random thought</span>
+                        <span class="note__date">12.09.2022</span>
+                     </div>
+                  </div>
+                  <div class="note__main">
+                     <p class="note__content">The movie will be released 15/09, should I go?</p>
+                     <span class="note__dates">15/09</span>
+                  </div>
+                  <div class="note__actions">
+                     <div class="note__icon" id="5_edit"><img src="img/pencil.png" alt="edit"></div>
+                     <div class="note__icon" id="5_archive"><img src="img/download-button.png" alt="archive"></div>
+                     <div class="note__icon" id="5_delete"><img src="img/garbage.png" alt="delete"></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="summary">
+               
+               <div class="summary__block">
+                  <div class="summary__categories">
+                     <span class="summary__title">Note category</span>
+                     <p class="summary__category">Task</p>
+                     <p class="summary__category">Random thought</p>
+                     <p class="summary__category">Idea</p>
+                  </div>
+                  <div class="summary__notes-number">
+                     <div class="summary__active">
+                        <span class="summary__title-state">Active</span>
+                        <p class="summary__task"></p>
+                        <p class="summary__thought"></p>
+                        <p class="summary__idea"></p>
+                     </div>
+                     <div class="summary__archived">
+                        <span class="summary__title-state">Archived</span>
+                        <p class="summary__task-archived"></p>
+                        <p class="summary__thought-archived"></p>
+                        <p class="summary__idea-archived"></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="notes__add hidden">
+               <form>
+                     <input name="title" placeholder="Title" class="title-input"></input></br>
+                     <textarea class="textarea" name="content" placeholder="Type the note here..."></textarea></br>
+                     <select class="select" required defaultValue="Choose an author" name="nickname">
+                        <option defaultValue="Choose a category" disabled selected>Choose a category</option>
+                        <option defaultValue='Task'>Task</option>
+                        <option defaultValue='Random thought'>Random thought</option>
+                        <option defaultValue='Idea'>Idea</option>
+                     </select>
+                  <p class="message"></p>
+                  <button type="submit" class="btn__create-note">Add note</button>
+              </form>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <script src="js/main.js"></script>
+   <script src="js/toggle.js"></script>
+</body>
+</html>
