@@ -131,7 +131,6 @@ function createNote() {
       </div>
    </div>`
       )
-      
 }
 
 function cleanTheInputs() {

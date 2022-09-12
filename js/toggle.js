@@ -50,7 +50,6 @@ function showArchivedNotes(target) {
   });
 }
 
-
 function showSubcategories(target, category) {
    removeColor()
    target.classList.add('chosen')
