@@ -108,5 +108,3 @@ function countNotes() {
    let ideaArch = doc.querySelector('.summary__idea-archived')
    ideaArch.innerText = ideaArchived
 }
-
-//qwerty
